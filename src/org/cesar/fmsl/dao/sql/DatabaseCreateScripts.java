@@ -1,4 +1,4 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 
 public final class DatabaseCreateScripts {

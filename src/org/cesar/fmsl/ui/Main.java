@@ -1,9 +1,9 @@
 	package org.cesar.fmsl.ui;
 
-import org.cesar.fmsl.models.MatchRepository;
-import org.cesar.fmsl.models.PlayerRepository;
-import org.cesar.fmsl.models.StatsRepository;
-import org.cesar.fmsl.models.TeamRepository;
+import org.cesar.fmsl.dao.sql.MatchDAOSQL;
+import org.cesar.fmsl.dao.sql.PlayerDAOSQL;
+import org.cesar.fmsl.dao.sql.StatisticsDAOSQL;
+import org.cesar.fmsl.dao.sql.TeamDAOSQL;
 import org.cesar.fmsl.ui.player.ListPlayer;
 import org.cesar.fmsl.ui.team.ListTeam;
 import org.cesar.lfbl.R;
@@ -24,10 +24,10 @@ import android.widget.Toast;
 
 public class Main extends Activity implements OnClickListener{
     
-	public static TeamRepository teamRep;
-	public static PlayerRepository playerRep;
-	public static MatchRepository matchRep;
-	public static StatsRepository statsRep;
+	public static TeamDAOSQL teamRep;
+	public static PlayerDAOSQL playerRep;
+	public static MatchDAOSQL matchRep;
+	public static StatisticsDAOSQL statsRep;
 	private CheckBox cb;
 	
 	/** Called when the activity is first created. */
@@ -70,10 +70,10 @@ public class Main extends Activity implements OnClickListener{
 	}
 
 	private void initializeReps() {
-		playerRep	= new PlayerRepository(this);
-		matchRep 	= new MatchRepository(this);
-		teamRep 	= new TeamRepository(this);
-		statsRep 	= new StatsRepository(this);
+		playerRep	= new PlayerDAOSQL(this);
+		matchRep 	= new MatchDAOSQL(this);
+		teamRep 	= new TeamDAOSQL(this);
+		statsRep 	= new StatisticsDAOSQL(this);
 	}
 	public void onClick(View v) {
 		switch (v.getId()) {

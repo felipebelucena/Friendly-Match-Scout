@@ -1,10 +1,12 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.cesar.fmsl.dao.IStatisticsDAO;
+import org.cesar.fmsl.models.Stats;
 import org.cesar.fmsl.models.Stats.StatsInner;
 
 import android.content.ContentValues;
@@ -15,7 +17,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-public class StatsRepository {
+public class StatisticsDAOSQL implements IStatisticsDAO {
 
 	protected SQLiteDatabase db;
 	private SQLiteHelper dbHelper;
@@ -25,10 +27,10 @@ public class StatsRepository {
 	private static final String[] createScript = DatabaseCreateScripts.createScripts ;
 	private static final String deleteScript = "DROP TABLE IF EXISTS " + TABLE_NAME;
 
-	public StatsRepository(Context ctx) {
-		dbHelper = new SQLiteHelper(ctx, StatsRepository.DATABASE_NAME, 
-				StatsRepository.DATABASE_VERSION, StatsRepository.createScript, 
-				StatsRepository.deleteScript);
+	public StatisticsDAOSQL(Context ctx) {
+		dbHelper = new SQLiteHelper(ctx, StatisticsDAOSQL.DATABASE_NAME, 
+				StatisticsDAOSQL.DATABASE_VERSION, StatisticsDAOSQL.createScript, 
+				StatisticsDAOSQL.deleteScript);
 		db = dbHelper.getWritableDatabase();
 	}
 	

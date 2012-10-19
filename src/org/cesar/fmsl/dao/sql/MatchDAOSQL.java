@@ -1,8 +1,10 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.cesar.fmsl.dao.IMatchDAO;
+import org.cesar.fmsl.models.Match;
 import org.cesar.fmsl.models.Match.Matches;
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,7 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-public class MatchRepository {
+public class MatchDAOSQL implements IMatchDAO {
 
 	protected SQLiteDatabase db;
 	private SQLiteHelper dbHelper;
@@ -22,10 +24,10 @@ public class MatchRepository {
 	private static final String[] createScript = DatabaseCreateScripts.createScripts;
 	private static final String deleteScript = "DROP TABLE IF EXISTS " + TABLE_NAME;
 	
-	public MatchRepository(Context ctx) {
-		dbHelper = new SQLiteHelper(ctx, MatchRepository.DATABASE_NAME, 
-				MatchRepository.DATABASE_VERSION, MatchRepository.createScript, 
-				MatchRepository.deleteScript);
+	public MatchDAOSQL(Context ctx) {
+		dbHelper = new SQLiteHelper(ctx, MatchDAOSQL.DATABASE_NAME, 
+				MatchDAOSQL.DATABASE_VERSION, MatchDAOSQL.createScript, 
+				MatchDAOSQL.deleteScript);
 		db = dbHelper.getWritableDatabase();
 	}
 	

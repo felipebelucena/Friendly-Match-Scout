@@ -1,4 +1,4 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

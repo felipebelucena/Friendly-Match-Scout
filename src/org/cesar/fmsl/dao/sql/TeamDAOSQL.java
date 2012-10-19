@@ -1,8 +1,10 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.cesar.fmsl.dao.ITeamDAO;
+import org.cesar.fmsl.models.Team;
 import org.cesar.fmsl.models.Team.Teams;
 import org.cesar.fmsl.ui.Main;
 import org.cesar.lfbl.R;
@@ -17,7 +19,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-public class TeamRepository {
+public class TeamDAOSQL implements ITeamDAO {
 
 	protected SQLiteDatabase db;
 	private SQLiteHelper dbHelper;
@@ -28,10 +30,10 @@ public class TeamRepository {
 	private static final String deleteScript = "DROP TABLE IF EXISTS " + TABLE_NAME;
 	
 	
-	public TeamRepository(Context ctx) {
-		dbHelper = new SQLiteHelper(ctx, TeamRepository.DATABASE_NAME, 
-				TeamRepository.DATABASE_VERSION, TeamRepository.createScript, 
-				TeamRepository.deleteScript);
+	public TeamDAOSQL(Context ctx) {
+		dbHelper = new SQLiteHelper(ctx, TeamDAOSQL.DATABASE_NAME, 
+				TeamDAOSQL.DATABASE_VERSION, TeamDAOSQL.createScript, 
+				TeamDAOSQL.deleteScript);
 		db = dbHelper.getWritableDatabase();
 	}
 	

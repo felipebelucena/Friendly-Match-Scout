@@ -2,8 +2,8 @@ package org.cesar.fmsl.ui.player;
 
 import java.util.List;
 
+import org.cesar.fmsl.dao.sql.PlayerDAOSQL;
 import org.cesar.fmsl.models.Player;
-import org.cesar.fmsl.models.PlayerRepository;
 import org.cesar.fmsl.ui.Main;
 import org.cesar.lfbl.R;
 
@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 public class ListPlayer extends ListActivity {
 
-	public static PlayerRepository playerRep;
+	public static PlayerDAOSQL playerRep;
 	private static final int INSERT_EDIT = 1;
 	private static final int INSERT_FROM_CONTACTS = 2;
 	private List<Player> list;

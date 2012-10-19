@@ -1,8 +1,10 @@
-package org.cesar.fmsl.models;
+package org.cesar.fmsl.dao.sql;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.cesar.fmsl.dao.IPlayerDAO;
+import org.cesar.fmsl.models.Player;
 import org.cesar.fmsl.models.Player.Players;
 
 import android.content.ContentValues;
@@ -13,7 +15,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 import android.util.Log;
 
-public class PlayerRepository {
+public class PlayerDAOSQL implements IPlayerDAO {
 
 	protected SQLiteDatabase db;
 	private SQLiteHelper dbHelper;
@@ -24,10 +26,10 @@ public class PlayerRepository {
 	private static final String deleteScript = "DROP TABLE IF EXISTS " + TABLE_NAME;
 	
 	
-	public PlayerRepository(Context ctx) {
-		dbHelper = new SQLiteHelper(ctx, PlayerRepository.DATABASE_NAME, 
-				PlayerRepository.DATABASE_VERSION, PlayerRepository.createScript, 
-				PlayerRepository.deleteScript);
+	public PlayerDAOSQL(Context ctx) {
+		dbHelper = new SQLiteHelper(ctx, PlayerDAOSQL.DATABASE_NAME, 
+				PlayerDAOSQL.DATABASE_VERSION, PlayerDAOSQL.createScript, 
+				PlayerDAOSQL.deleteScript);
 		db = dbHelper.getWritableDatabase();
 	}
 	

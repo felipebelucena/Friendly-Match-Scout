@@ -2,8 +2,8 @@ package org.cesar.fmsl.ui.team;
 
 import java.util.List;
 
+import org.cesar.fmsl.dao.sql.TeamDAOSQL;
 import org.cesar.fmsl.models.Team;
-import org.cesar.fmsl.models.TeamRepository;
 import org.cesar.lfbl.R;
 
 import android.app.ListActivity;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class ListTeam extends ListActivity {
 
-	public static TeamRepository teamRep;
+	public static TeamDAOSQL teamRep;
 	private static final int INSERT_EDIT = 1;
 	
 	
@@ -27,7 +27,7 @@ public class ListTeam extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		teamRep = new TeamRepository(this);
+		teamRep = new TeamDAOSQL(this);
 		updateTeamList();
 		
 	}

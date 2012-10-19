@@ -17,6 +17,7 @@ public class EndMatch extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//nada a ver
 		
 		setContentView(R.layout.layout_match_result);
 		Bundle extras = getIntent().getExtras();
