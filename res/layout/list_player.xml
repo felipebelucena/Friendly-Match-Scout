@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:padding="10dp" >
+
+    <TableRow >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_name"
+            />
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_height="wrap_content"
+             />
+     
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_team"
+             />
+
+        <TextView
+            android:id="@+id/teamNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_phone"
+             />
+
+        <TextView
+            android:id="@+id/playerContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </TableRow>
+
+</TableLayout>

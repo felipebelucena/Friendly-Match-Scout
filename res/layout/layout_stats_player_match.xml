@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#ffffff" >
+    
+    <TextView 
+        android:id="@+id/playerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"        
+        android:textSize="18dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"/>
+
+    <!-- aqui ta limpeza, só que ira para o custom dialog!!! 
+    
+    
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        
+        android:id="@+id/matchTableLayout" >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/playerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="130dp"
+                android:text="Faltas:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/faultsNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="99"
+                minValue="0"
+                plusminus_width="50"
+                plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gols:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/goalsNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="99"
+                minValue="0"
+                plusminus_width="50"
+                plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chute a gol:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/goalShootNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="99"
+                minValue="0"
+                plusminus_width="50"
+                plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão Vermelho:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/redCardNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="1"
+                minValue="0"
+               plusminus_width="50"
+               plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão Amarelo:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/yellowCardNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="2"
+                minValue="0"
+                plusminus_width="50"
+                plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assistências:" />
+
+            <org.cesar.fmsl.utils.NumberPicker
+                android:id="@+id/assistsNP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SpinMeasure"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/RateTitle"
+                defaultValue="0"
+                android:gravity="center"
+                maxValue="99"
+                minValue="0"
+                plusminus_width="50"
+                plusminus_height="50"
+                repeatAcceleration="10"
+                textSize="12"
+                textarea_width="70"
+                textarea_height="50"
+                vertical="false" />
+        </TableRow>
+    </TableLayout>
+    
+    -->
+
+        
+    
+
+</LinearLayout>

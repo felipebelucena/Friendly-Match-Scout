@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FriendlyMatchScoutLiteActivity!</string>
+    <string name="app_name">Match Scout Lite</string>
+    <string name="fmsl_message">
+       Click in the  \'Teams\' button to edit or delete a team. If you haven\'t add a team, click in  \'Insert new\' menu to add one
+       \nClick in the \'Players\' button to manage players and view stats. 
+        If you haven\'t add a player, click in the \'Insert new\' menu.
+        \nAtention! Only 7 players allowed per team!        
+    </string>
+    <string name="back_key_pressed">Are you sure you want to leave?
+			\nAll match progress will be lost.</string>
+    <string name="main_alert_dialog_title">FMSL - learn more!</string>
+    <string name="back_alert_dialog_title">Leave match</string>
+    <string name="checkbox_text">Don\'t show this message again</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="no_team_toast_message">Insert a team!</string>
+    <string name="invalid_team_toast_message">
+    		Please choose valid teams!
+    		\nThey need to be different and have 7 players 
+   	</string>
+   	<string name="no_player_toast_message">
+   		No players recorded!
+		\nGo to \'insert new\' menu to add a player"   	
+   	</string>
+   	<string name="stats_saved_toast_message">Statistics saved.</string>
+   	<string name="match_info_not_found">Error while searching match info</string>
+   	
+    
+    <!--  button's strings -->
+    <string name="button_new_match">New match</string>
+    <string name="button_manage_team">Teams</string>
+    <string name="button_manage_players">Players</string>
+    <string name="button_start_match">Start</string>
+    <string name="button_send_stats">Send Statistics</string>
+     <string name="button_end_match">End Match</string>
+    
+    
+    <!--  menu strings -->
+    <string name="menu_insert_new">Insert new</string>
+    <string name="menu_insert_new_contact">Insert Contact</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_manageTeams">Manage Teams</string>
+    <string name="menu_managePlayers">Manage Players</string>
+    <string name="menu_stats">Statistics</string>
+    
+	<string name="label_new_match">New match:</string>
+	<string name="label_pick_home_team">Choose the home team:</string>
+	<string name="label_pick_away_team">Choose the away team:</string>
+	<string name="label_match_time">Time (min):</string>
+	<string name="label_name">Name:</string>
+	<string name="label_phone">Phone:</string>
+	<string name="label_team">Team:</string>
+	<string name="label_stats">Statistics</string>
+	<string name="label_fouls">Fouls:</string>
+	<string name="label_goals">Goal:</string>
+	<string name="label_goal_shoot">Goal shoot:</string>
+	<string name="label_red_card">Red card:</string>
+	<string name="label_yellow_card">Yellow card:</string>
+	<string name="label_assists">Assists:</string>
+	<string name="label_plays">Plays:</string>
+	<string name="tab_label_home_team">Home</string>
+	<string name="tab_label_away_team">Away</string>
+	<string name="tab_label_match">Match</string>
+	<string name="label_match_result">Match Result</string>
+	
+	<string name="sms_header_message">F, G, GS, RC, YC, A, P</string>
+	<string name="sms_send_success">Send successfully!</string>
+	<string name="sms_send_failed">Fail to send message!</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/barra">
+
+	<TabWidget android:id="@android:id/tabs"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+				<ListView android:background="#000000" android:id="@+id/homePlayersListView"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" />
+
+				<ListView android:background="#000000" android:id="@+id/awayPlayersListView"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" />
+				<LinearLayout android:id="@+id/abaPartida"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:orientation="vertical">
+					<TextView android:id="@+id/matchScore"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="[ Local 0x0 Visitante ]" android:textSize="22dp"
+						android:textColor="#ffffff" android:layout_gravity="center"
+						android:padding="20dp" android:layout_marginTop="15dp" />
+					<TextView android:id="@+id/timeTextView"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:padding="20dp" android:textSize="45dp" android:textColor="#ffffff"
+						android:layout_gravity="center" />
+
+
+					<Button android:id="@+id/endMatchButton"
+						android:layout_width="90dp" android:layout_height="wrap_content"
+						android:layout_gravity="center" android:layout_marginTop="50dp"
+						android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+						android:layout_marginBottom="10dp" android:text="@string/button_end_match" />
+				</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+	</TabWidget>
+
+</TabHost>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FriendlyMatchScoutLiteActivity!</string>
+    <string name="app_name">Match Scout Lite</string>
+    <string name="fmsl_message">
+       Clique no botão \'Times\' para editar ou excluir um time. Caso você não tenha nenhum time, clique no menu \'Inserir novo\'
+       \nClique no botão \'Jogadores\' para editar ou excluir um jogador e visualizar estatísticas. 
+        Caso você não tenha criado nenhum, clique no menu \'Inserir novo\'.
+        \nAtenção! Só é permitido 7 jogadores por time!        
+    </string>
+    <string name="back_key_pressed">Tem certeza que deseja sair?
+			\nTodo o progresso da partida será perdido</string>
+    <string name="main_alert_dialog_title">FMSL - Saiba mais!</string>
+    <string name="back_alert_dialog_title">Sair da partida</string>
+    <string name="checkbox_text">Não exibir essa mensagem novamente</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancelar</string>
+    <string name="no_team_toast_message">Cadastre um time!</string>
+    <string name="invalid_team_toast_message">
+    		Escolha Times Válidos!
+    		\nEles precisam ser diferentes e conter 7 jogadores 
+   	</string>
+   	<string name="no_player_toast_message">
+   		Sem jogadores cadastrados!
+		\nVá ao menu \'inserir novo\' para adcionar um jogador"   	
+   	</string>
+   	<string name="stats_saved_toast_message">Estatísticas salvas.</string>
+   	<string name="match_info_not_found">Erro ao buscar as informações da partida</string>
+    
+    <!--  button's strings -->
+    <string name="button_new_match">Nova partida</string>
+    <string name="button_manage_team">Times</string>
+    <string name="button_manage_players">Jogadores</string>
+    <string name="button_start_match">Iniciar</string>
+    <string name="button_send_stats">Enviar Estatísticas</string>
+    <string name="button_end_match">Finalizar Partida</string>
+    
+    
+    <!--  menu strings -->
+    <string name="menu_insert_new">Inserir novo</string>
+    <string name="menu_insert_new_contact">Inserir Contato</string>
+    <string name="menu_save">Salvar</string>
+    <string name="menu_delete">Deletar</string>
+    <string name="menu_cancel">Cancelar</string>
+    <string name="menu_manageTeams">Gerenciar times</string>
+    <string name="menu_managePlayers">Gerenciar jogadores</string>
+    <string name="menu_stats">Estatísticas</string>
+    
+	<string name="label_new_match">Nova partida:</string>
+	<string name="label_pick_home_team">Escolha o time local:</string>
+	<string name="label_pick_away_team">Escolha o time visitante:</string>
+	<string name="label_match_time">Tempo (min):</string>
+	<string name="label_name">Nome:</string>
+	<string name="label_phone">Telefone:</string>
+	<string name="label_team">Time:</string>
+	<string name="label_stats">Estatísticas</string>
+	<string name="label_fouls">Faltas:</string>
+	<string name="label_goals">Gols:</string>
+	<string name="label_goal_shoot">Chutes a gol:</string>
+	<string name="label_red_card">Cartão Vermelho:</string>
+	<string name="label_yellow_card">Cartão Amarelo:</string>
+	<string name="label_assists">Assistências:</string>
+	<string name="label_plays">Partidas:</string>
+	<string name="tab_label_home_team">Local</string>
+	<string name="tab_label_away_team">Visitante</string>
+	<string name="tab_label_match">Partida</string>
+	<string name="label_match_result">Resultado da Partida</string>
+	
+	
+	<string name="sms_header_message">F, G, CG, CV, CA, A, P</string>
+	<string name="sms_send_success">Enviada com sucesso!</string>
+	<string name="sms_send_failed">Falha no envio da mensagem!</string>
+
+</resources>

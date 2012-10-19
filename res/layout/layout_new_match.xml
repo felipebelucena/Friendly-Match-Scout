@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/gramado2" >
+
+    <TextView
+        android:id="@+id/newMatchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/label_new_match"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/homeTeamLabel"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/label_pick_home_team" />
+
+    <Spinner
+        android:id="@+id/homeTeamSpinner"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/awayTeamLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_pick_away_team" />
+
+    <Spinner
+        android:id="@+id/awayTeamSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/label_match_time" />
+
+<org.cesar.fmsl.utils.NumberPicker
+            android:id="@+id/matchTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/SpinMeasure"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/RateTitle"
+            defaultValue="5"
+            android:gravity="center"
+            maxValue="60"
+            minValue="1"
+            plusminus_width="50"
+            repeatAcceleration="10"
+            textSize="33"
+            textarea_width="85"
+            vertical="false" />
+   
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/button_start_match"
+            android:gravity="center"
+            android:layout_gravity="center"
+             />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gramado2" >
+
+    <TableRow
+        android:gravity="center"
+        android:padding="25dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_match_result"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+        />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/homeTeamTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time1"
+            android:textSize="28dp"
+            android:textColor="#ffffff" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/homeScoreTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100"
+            android:textSize="28dp"
+            android:textColor="#ffffff" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="X"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/awayScoreTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100"
+            android:textSize="28dp"
+            android:textColor="#ffffff" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/awayTeamTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Time1"
+            android:textSize="28dp"
+            android:textColor="#ffffff" />
+    </TableRow>
+
+    <!-- <TableRow
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btNewMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_new_match" />
+    </TableRow>
+     -->
+</TableLayout>

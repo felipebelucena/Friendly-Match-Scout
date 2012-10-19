@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cesar.lfbl"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:icon="@drawable/bola20velha"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="org.cesar.fmsl.ui.Main" 
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.team.ListTeam"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.team.EditTeam"
+             />
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.player.ListPlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.player.EditPlayer"
+             />
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.NewMatch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:launchMode="singleTop"
+            android:name="org.cesar.fmsl.ui.player.ShowStats"
+            android:screenOrientation="portrait" />
+        <activity android:name="org.cesar.fmsl.ui.MatchActivity" 
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        
+        <activity android:name="org.cesar.fmsl.ui.EndMatch"
+            android:screenOrientation="portrait"/>
+        
+        <service android:name="org.cesar.fmsl.utils.Chronometer">
+            <intent-filter>
+                <action android:name="CHRONOMETER_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
