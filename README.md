@@ -1,4 +1,4 @@
-Friendly-Match-Scout
+Friendly Match Scout
 ====================
 
-A simple Android statistics application for friendly soccer matchs
+A simple Android statistics application for friendly soccer matches.
